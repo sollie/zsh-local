@@ -20,3 +20,4 @@ POWERLEVEL9K_HOST_LOCAL_BACKGROUND="white"
 zplug bobsoppe/zsh-ssh-agent, use:ssh-agent.zsh, from:github
 
 export PATH=$PATH:~/bin
+alias tf="aws-vault exec telia_admin -- terraform"
