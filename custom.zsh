@@ -89,12 +89,12 @@ function set-term-title {
 
 # At the prompt, we set the title to "$HOST : $PWD".
 function precmd-title {
-	set-term-title "$(print -P %m : %~)"
+	set-term-title "$(print -P %n@%m : %~)"
 }
 
 # When running a command, set the title to "$HOST : $COMMAND"
 function preexec-title {
-	set-term-title "$(print -P %m : $1)"
+	set-term-title "$(print -P %n@%m : $1)"
 }
 
 # Update PWURL whenever we change PWD
