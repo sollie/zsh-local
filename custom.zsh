@@ -18,6 +18,8 @@ POWERLEVEL9K_HOST_REMOTE_BACKGROUND="white"
 POWERLEVEL9K_HOST_LOCAL_BACKGROUND="white"
 
 zplug bobsoppe/zsh-ssh-agent, use:ssh-agent.zsh, from:github
+zplug MichaelAquilina/zsh-you-should-use, use:you-should-use.plugin.zsh, from:github
+
 setopt interactivecomments
 export PATH=$PATH:~/bin
 
@@ -111,3 +113,17 @@ autoload add-zsh-hook
 add-zsh-hook precmd precmd-title
 add-zsh-hook preexec preexec-title
 add-zsh-hook chpwd chpwd-chpwurl
+
+alias jssh="ssh -J scalpel"
+
+export TERM="xterm-256color"
+export HISTCONTROL="ignorespace"
+
+export LANG=en_US.UTF-8
+export LC_COLLATE="no_NO.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="no_NO.UTF-8"
+export LC_NUMERIC="no_NO.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
