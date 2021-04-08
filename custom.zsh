@@ -27,10 +27,10 @@ if [ -f ~/.zsh/local/alias ]; then
   source ~/.zsh/local/alias
 fi
 
-alias jssh="ssh -J scalpel"
-
 export TERM="xterm-256color"
 export HISTCONTROL="ignorespace"
+
+export EDITOR=vim
 
 export LANG=en_US.UTF-8
 export LC_COLLATE="no_NO.UTF-8"
