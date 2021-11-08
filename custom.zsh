@@ -35,10 +35,6 @@ if [ -f ~/.zsh/local/alias_local ]; then
   source ~/.zsh/local/alias_local
 fi
 
-if [ -f ~/.fzf.zsh ]; then
-  source ~/.fzf.zsh
-fi
-
 export TERM="xterm-256color"
 export HISTCONTROL="ignorespace"
 
