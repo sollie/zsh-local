@@ -21,7 +21,7 @@ zplug bobsoppe/zsh-ssh-agent, use:ssh-agent.zsh, from:github
 zplug MichaelAquilina/zsh-you-should-use, use:you-should-use.plugin.zsh, from:github
 
 setopt interactivecomments
-export PATH=$PATH:~/bin
+export PATH=~/bin:~/go/bin:$PATH
 
 if [ -f ~/.zsh/local/alias ]; then
   source ~/.zsh/local/alias
