@@ -27,6 +27,10 @@ if [ -d /usr/local/opt/mysql-client@5.7/bin ]; then
   export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
 fi
 
+if [ -f ~/.zsh/local/local.zsh ]; then
+  source ~/.zsh/local/local.zsh
+fi
+
 if [ -f ~/.zsh/local/alias ]; then
   source ~/.zsh/local/alias
 fi
