@@ -34,6 +34,8 @@ if [ -f ~/.zsh/local/alias_local ]; then
   source ~/.zsh/local/alias_local
 fi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export TERM="xterm-256color"
 export HISTCONTROL="ignorespace"
 
