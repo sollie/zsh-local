@@ -20,10 +20,15 @@ POWERLEVEL9K_HOST_LOCAL_BACKGROUND="white"
 zplug bobsoppe/zsh-ssh-agent, use:ssh-agent.zsh, from:github
 zplug MichaelAquilina/zsh-you-should-use, use:you-should-use.plugin.zsh, from:github
 
-export PATH=$PATH:~/bin
+setopt interactivecomments
+export PATH=~/bin:~/go/bin:$PATH
 
 if [ -d /usr/local/opt/mysql-client@5.7/bin ]; then
   export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
+fi
+
+if [ -f ~/.zsh/local/local.zsh ]; then
+  source ~/.zsh/local/local.zsh
 fi
 
 if [ -f ~/.zsh/local/alias ]; then
